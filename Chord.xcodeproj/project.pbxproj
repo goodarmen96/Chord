@@ -14,6 +14,10 @@
 		2BD5FAF821960D680082790A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BD5FAF621960D680082790A /* LaunchScreen.storyboard */; };
 		2BD5FB0321960D680082790A /* ChordTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD5FB0221960D680082790A /* ChordTests.swift */; };
 		2BD5FB0E21960D680082790A /* ChordUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD5FB0D21960D680082790A /* ChordUITests.swift */; };
+		2BD5FB3821960E310082790A /* Exec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD5FB3421960E310082790A /* Exec.swift */; };
+		2BD5FB3921960E310082790A /* Finger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD5FB3521960E310082790A /* Finger.swift */; };
+		2BD5FB3A21960E310082790A /* FingerTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD5FB3621960E310082790A /* FingerTable.swift */; };
+		2BD5FB3B21960E310082790A /* ChordNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD5FB3721960E310082790A /* ChordNode.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,10 @@
 		2BD5FB0921960D680082790A /* ChordUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChordUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BD5FB0D21960D680082790A /* ChordUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChordUITests.swift; sourceTree = "<group>"; };
 		2BD5FB0F21960D680082790A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2BD5FB3421960E310082790A /* Exec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Exec.swift; sourceTree = "<group>"; };
+		2BD5FB3521960E310082790A /* Finger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Finger.swift; sourceTree = "<group>"; };
+		2BD5FB3621960E310082790A /* FingerTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FingerTable.swift; sourceTree = "<group>"; };
+		2BD5FB3721960E310082790A /* ChordNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChordNode.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +105,7 @@
 		2BD5FAEC21960D660082790A /* Chord */ = {
 			isa = PBXGroup;
 			children = (
+				2BD5FB3321960E310082790A /* ChordSources */,
 				2BD5FAED21960D660082790A /* AppDelegate.swift */,
 				2BD5FAEF21960D660082790A /* ViewController.swift */,
 				2BD5FAF121960D660082790A /* Main.storyboard */,
@@ -123,6 +132,17 @@
 				2BD5FB0F21960D680082790A /* Info.plist */,
 			);
 			path = ChordUITests;
+			sourceTree = "<group>";
+		};
+		2BD5FB3321960E310082790A /* ChordSources */ = {
+			isa = PBXGroup;
+			children = (
+				2BD5FB3421960E310082790A /* Exec.swift */,
+				2BD5FB3521960E310082790A /* Finger.swift */,
+				2BD5FB3621960E310082790A /* FingerTable.swift */,
+				2BD5FB3721960E310082790A /* ChordNode.swift */,
+			);
+			path = ChordSources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,6 +278,10 @@
 			files = (
 				2BD5FAF021960D660082790A /* ViewController.swift in Sources */,
 				2BD5FAEE21960D660082790A /* AppDelegate.swift in Sources */,
+				2BD5FB3A21960E310082790A /* FingerTable.swift in Sources */,
+				2BD5FB3921960E310082790A /* Finger.swift in Sources */,
+				2BD5FB3B21960E310082790A /* ChordNode.swift in Sources */,
+				2BD5FB3821960E310082790A /* Exec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,6 +457,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7TN2X6PKDN;
 				INFOPLIST_FILE = Chord/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -450,6 +475,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7TN2X6PKDN;
 				INFOPLIST_FILE = Chord/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
